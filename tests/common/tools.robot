@@ -50,7 +50,7 @@ Navigate To Reports
     Log    Completed Success 
 
 Wait For Page Ready
-    Open Application In Browser
+    Open Application
     Sleep    2s
     Log    Completed Success 
 
