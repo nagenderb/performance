@@ -46,11 +46,12 @@ Navigate To Search
 
 Navigate To Reports
     Log    Clicking Now
-    Sleep    2s
+    Wait For Page Ready
     Log    Completed Success 
 
 Wait For Page Ready
-    Log    Clicking Now
+    Open Application In Browser
+    Sleep    2s
     Log    Completed Success 
 
 
