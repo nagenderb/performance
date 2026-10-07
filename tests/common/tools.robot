@@ -1,6 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
+
+*** Variables ***
 ${URL}                    https://ajaanims.co.in/qa/staging/apm/performance.html
+
 *** Keywords ***
 Initialize Application
     Log    Initializing shared application
@@ -11,6 +14,7 @@ Open Application
     Open Application In Browser
     Go To    ${URL}
     Maximize Browser Window
+
 
 Login And Prepare Application
     Log    Preparing authenticated session
