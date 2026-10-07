@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Customer Portal</title>
+<style>body{font-family:Arial;margin:40px}nav a{margin-right:18px}.panel{margin-top:30px;padding:20px;border:1px solid #ccc}</style></head>
+<body><h1>Customer Portal</h1><nav>
+<a id="profile-link" href="#profile">Profile</a><a id="dashboard-link" href="#dashboard">Dashboard</a>
+<a id="orders-link" href="#orders">Orders</a><a id="search-link" href="#search">Search</a><a id="reports-link" href="#reports">Reports</a>
+</nav><div class="panel" id="page-ready">Application Ready</div><div class="panel" id="content">Home</div>
+<script>function render(n){content.textContent=n;document.getElementById("page-ready").textContent="Page Ready: "+n}
+document.querySelectorAll("nav a").forEach(a=>a.onclick=e=>{e.preventDefault();render(a.textContent)})</script></body></html>
