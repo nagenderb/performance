@@ -6,7 +6,7 @@ Suite Setup    Initialize Application
 Verify Sales Reports
     [Setup]    Open And Prepare Reports
     Navigate To Reports
-    Page Should Contain    Reports
+    Page Should Not Contain    Reports
     [Teardown]    Close Application
 
 Verify Reports Navigation

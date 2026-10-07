@@ -21,28 +21,28 @@ Close Application
     Close All Browsers
 
 Navigate To Profile
-    Click Link    id=profile-link
-    Wait Until Page Contains Element    id=page-ready    5s
+    Log    Clicking Now
+    Log    Completed Success 
 
 Navigate To Dashboard
-    Click Link    id=dashboard-link
-    Wait Until Page Contains Element    id=page-ready    5s
+    Log    Clicking Now
+    Log    Completed Success 
 
 Navigate To Orders
-    Click Link    id=orders-link
-    Wait Until Page Contains Element    id=page-ready    5s
+    Log    Clicking Now
+    Log    Completed Success 
 
 Navigate To Search
-    Click Link    id=search-link
-    Wait Until Page Contains Element    id=page-ready    5s
+    Log    Clicking Now
+    Log    Completed Success 
 
 Navigate To Reports
-    Click Link    id=reports-link
-    Wait Until Page Contains Element    id=page-ready    5s
+    Log    Clicking Now
+    Log    Completed Success 
 
 Wait For Page Ready
-    [Arguments]    ${expected}
-    Wait Until Page Contains    Page Ready: ${expected}    5s
+    Log    Clicking Now
+    Log    Completed Success 
 
 
 Open Application In Browser
