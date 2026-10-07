@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-
+${URL}                    https://ajaanims.co.in/qa/staging/apm/performance.html
 *** Keywords ***
 Initialize Application
     Log    Initializing shared application
@@ -9,6 +9,7 @@ Initialize Application
 
 Open Application
     Open Application In Browser
+    Go To    ${URL}
     Maximize Browser Window
 
 Login And Prepare Application
@@ -53,3 +54,4 @@ Open Application In Browser
     Evaluate    $options.add_argument("--disable-gpu")
     Evaluate    $options.add_argument("--window-size=1920,1080")
     Open Browser    browser=chrome    options=${options}
+    
