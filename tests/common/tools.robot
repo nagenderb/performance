@@ -7,8 +7,11 @@ ${URL}                    https://ajaanims.co.in/qa/staging/apm/performance.html
 *** Keywords ***
 Initialize Application
     Log    Initializing shared application
+    Upgrade Build
+    Log    Shared application initialization & Upgrade complete
+
+Upgrade Build
     Sleep    5s
-    Log    Shared application initialization complete
 
 Open Application
     Open Application In Browser
@@ -43,6 +46,7 @@ Navigate To Search
 
 Navigate To Reports
     Log    Clicking Now
+    Sleep    2s
     Log    Completed Success 
 
 Wait For Page Ready
