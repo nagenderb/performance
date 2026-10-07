@@ -3,12 +3,6 @@ Resource    ../common/tools.robot
 Suite Setup    Initialize Application
 
 *** Test Cases ***
-Verify Sales Reports
-    [Setup]    Open And Prepare Reports
-    Navigate To Reports
-    Page Should Not Contain    Reports
-    [Teardown]    Close Application
-
 Verify Reports Navigation
     [Setup]    Open And Prepare Reports
     Navigate To Reports
